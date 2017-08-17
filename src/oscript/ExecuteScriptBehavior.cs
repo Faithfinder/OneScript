@@ -53,7 +53,12 @@ namespace oscript
                 return 1;
             }
 
-            return process.Start();
+            var result = process.Start();
+            hostedScript.Finalize();
+
+            ScriptFileHelper.OnAfterScriptExecute(hostedScript);
+
+            return result;
         }
 
         #region IHostApplication Members

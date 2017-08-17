@@ -109,6 +109,8 @@
     <Compile Include="Environment\ModuleInformation.cs" />
     <Compile Include="FormatParametersList.cs" />
     <Compile Include="IDirectiveResolver.cs" />
+    <Compile Include="Machine\CodeStat\CodeStatData.cs" />
+    <Compile Include="Machine\CodeStat\CodeStatDataCollection.cs" />
     <Compile Include="Machine\ComReflectionNameToIdMapper.cs" />
     <Compile Include="Machine\Contexts\CLREnumValueWrapper.cs" />
     <Compile Include="Machine\Contexts\EnumContextHelper.cs" />
@@ -189,7 +191,11 @@
     <Compile Include="Utils.cs" />
     <Compile Include="Machine\Contexts\EnumerationTypeAttribute.cs" />
     <Compile Include="Machine\Contexts\EnumItemAttribute.cs" />
+    <Compile Include="Machine\CodeStat\CodeStatEntry.cs" />
+    <Compile Include="Machine\CodeStat\CodeStatProcessor.cs" />
+    <Compile Include="Machine\CodeStat\ICodeStatCollector.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>
